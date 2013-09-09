@@ -1,5 +1,5 @@
-EndlessRunner
-=============
+EndlessScroller
+===============
 
 Corona SDK example showing how to create and endless scroller type game.
 
