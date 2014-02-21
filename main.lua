@@ -58,12 +58,12 @@ local spawnWall = function(x)
 	end
 	
 	local topWall = display.newImage( wallGroup, wallSheet, topWalls[wallIndex] )
-	topWall:setReferencePoint(display.TopCenterReferencePoint)
+	topWall.anchorX = 0.5; topWall.anchorY = 0.0;
 	topWall.x = x; topWall.y = - 30;
 	topWall.type = topWalls[wallIndex]
 
 	local bottomWall = display.newImage( wallGroup, wallSheet, bottomWalls[wallIndex] )
-	bottomWall:setReferencePoint(display.BottomCenterReferencePoint)
+	bottomWall.anchorX = 0.5; bottomWall.anchorY = 1.0;
 	bottomWall.x = x; bottomWall.y = _H + 30;
 	bottomWall.type = bottomWalls[wallIndex]
 
